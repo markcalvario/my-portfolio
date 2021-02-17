@@ -1,5 +1,8 @@
 # Google Software Product Sprint
 
+Mark Calvario 
+Spring 2021
+
 This repo contains the projects you'll work on throughout SPS.
 
 To get started:
