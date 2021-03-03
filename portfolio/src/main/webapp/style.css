@@ -2,6 +2,9 @@ body{
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
 }
+.bg-light-grey{
+    background-color: #E4E4E4;
+}
 .home {
     /*background-color: #cabbe9;*/
     background-color: black;
@@ -43,4 +46,8 @@ a:hover{
 .mark-puebla-img{
     object-fit: cover;
     object-position: 0 50px;
+}
+.card-img-height{
+    height: 200px;
+    object-fit: contain;
 }
