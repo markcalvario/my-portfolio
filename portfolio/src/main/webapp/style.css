@@ -51,3 +51,7 @@ a:hover{
     height: 200px;
     object-fit: contain;
 }
+.message-input{
+    height: 10vh;
+    resize: none;
+}
