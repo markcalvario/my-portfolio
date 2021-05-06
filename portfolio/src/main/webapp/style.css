@@ -2,9 +2,6 @@ body{
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
 }
-.bg-light-grey{
-    background-color: #E4E4E4;
-}
 .home {
     /*background-color: #cabbe9;*/
     background-color: black;
@@ -49,9 +46,31 @@ a:hover{
 }
 .card-img-height{
     height: 200px;
-    object-fit: contain;
 }
 .message-input{
     height: 10vh;
     resize: none;
+}
+.bg-gray{
+    background-color: #E4E4E4;
+}
+#map-result {
+  border: thin solid black;
+  height: 45vh;
+  width: 80%;
+}
+
+/*#about, #projects, #contact{
+    background-color: #E4E4E4;
+}*/
+.gallery-img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.letter-spacing{
+    letter-spacing: 5px;
+}
+.fun-facts-title, .contact-title{
+    font-size: 3rem;
 }

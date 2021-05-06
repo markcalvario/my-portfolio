@@ -3,3 +3,5 @@
 .project
 .settings/
 target/
+portfolio/src/env_variables.yaml
+portfolio/src/main/appengine/env_variables.yaml

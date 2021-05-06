@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZ_fscCrUAIUeRcDiUImAEBMLkhzuyCU"></script>
     <link rel="stylesheet" href="style.css">
     
     </head>
@@ -34,8 +35,8 @@
                                 <a class="nav-link" href="#home">Home</a>
                                 <a class="nav-link" href="#about">About</a>
                                 <a class="nav-link" href="#resume">Resume</a>
-                                <a class="nav-link" href="#">Projects</a>
-                                <a class="nav-link" href="#">Work</a>		 
+                                <a class="nav-link" href="#projects">Projects</a>
+                                <a class="nav-link" href="#contact">Contact</a>		 
                             </div>
                         </nav>
                     </div>
@@ -74,39 +75,48 @@
                 </div>
             </div>
         </div>
-        <div id="about" class="container-fluid w-75 justify-content-center py-4">
-            <div class="row text-center">
-                <h1>About</h1>
-            </div>
-            <div class="row pt-4">
-                <div class="col-3">
-                    <img class="img-fluid rounded-circle" src="images/MarkPuebla.JPG" alt="Mark in Puebla"/>
+        <div id="about" class="row justify-content-center py-4">
+                <div class="w-75 container-fluid">
+                    <div class="row py-3 my-3 text-center mx-auto">
+                        <h1>About</h1>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-9 mx-auto">
+                                    <img class="img-fluid rounded-circle" src="images/MarkPuebla.JPG" alt="Mark in Puebla"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9 ps-5 position-relative">
+                            <!--<div class="position-absolute top-50 start-50 translate-middle w-75"> -->
+                            <div>
+                                <p>
+                                    I am a first-generation Mexican-American from Southern California but 
+                                    both my parents are from Puebla, México. I am currently an undergraduate student 
+                                    at Columbia University in the City of New York. I have a passion for computer science and ceramics. 
+                                    In the future, I envision myself working in the technology industry while owning 
+                                    a ceramics studio on the side. 
+                                </p>
+                                <p class="py-4">
+                                    <span class="pe-2 fw-bold">Fluent in:</span> <span class="badge bg-dark rounded-pill "> Spanish</span> <span class="badge bg-dark rounded-pill "> English</span>
+                                </p>
+                                <!--<p class="fw-bold my-0 py-2">Fluent in: </p>
+                                <ul class="py-0 my-0 mx-2">
+                                    <li><span class="badge bg-dark rounded-pill "> Spanish</span></li>
+                                    <li><span class="badge bg-dark rounded-pill "> English</span></li>
+                                </ul>-->
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="fun-facts-container" class="pt-4">
+                        <h3 >Fun Facts</h3>
+                    </div>
                 </div>
-                <div class="col-9 ps-5 position-relative">
-                    <!--<div class="position-absolute top-50 start-50 translate-middle w-75"> -->
-                    <div>
-                        <p>
-                            I am a first-generation Mexican-American from Southern California but 
-                            both my parents are from Puebla, México. I am currently an undergraduate student 
-                            at Columbia University in the City of New York. I have a passion for computer science and ceramics. 
-                            In the future, I envision myself working in the technology industry while owning 
-                            a ceramics studio on the side. 
-                        </p>
-                        <p class="py-4">
-                            <span class="pe-2 fw-bold">Fluent in:</span> <span class="badge bg-dark rounded-pill "> Spanish</span> <span class="badge bg-dark rounded-pill "> English</span>
-                        </p>
-                        <!--<p class="fw-bold my-0 py-2">Fluent in: </p>
-                        <ul class="py-0 my-0 mx-2">
-                            <li><span class="badge bg-dark rounded-pill "> Spanish</span></li>
-                            <li><span class="badge bg-dark rounded-pill "> English</span></li>
-                        </ul>-->
-                    </div> 
-                </div>
-            </div>
         </div>        
-        <div id="resume" class="container-fluid  justify-content-center py-4 ">
+        <div id="resume" class="row justify-content-center py-4 ">
             <div class="container-fluid w-75">
-                <div class="row text-center">
+                <div class="my-3 mx-auto row text-center py-3">
                     <h1>Resume</h1>
                 </div> 
                 <div id="education" class="row py-2">
@@ -114,7 +124,7 @@
                     <div class="row pt-4">
                         <div class="col-2 pe-4 ps-0">
                             <div class="row">
-                                <div class="col-10 mx-auto">
+                                <div class="col-8 mx-auto">
                                     <img class="img-fluid rounded-circle" src="images/Columbialogo.JPG" alt="Columbia University Logo"/>
                                 </div>
                             </div>
@@ -154,7 +164,7 @@
                     <div id="Facebook University" class="row pt-4">
                         <div class="col-2 pe-4 ps-0">
                             <div class="row">
-                                <div class="col-10 mx-auto">
+                                <div class="col-8 mx-auto">
                                     <img class="img-fluid rounded-circle" src ="images/professionalExperience/FB.png" alt="Facebook Logo"/>
                                 </div>
                             </div>
@@ -189,7 +199,7 @@
                     <div id="Columbia Spectator" class="row pt-4">
                         <div class="col-2 pe-4 ps-0">
                             <div class="row">
-                                <div class="col-10 mx-auto">
+                                <div class="col-8 mx-auto">
                                     <img class="img-fluid rounded-circle" src ="images/Spectator Logo.png" alt="Spectator Logo"/>
                                 </div>
                             </div>
@@ -221,45 +231,78 @@
 
                     </div>
                 </div>
-            </div>
-
-        
+            </div> 
         </div>
-        <div id="projects" class="container-fluid justify-content-center py-4">
+        <div id="projects" class="row justify-content-center py-4">
             <div class="container-fluid w-75">
-                <div class="row text-center py-2">
+                <div class="row text-center py-3 my-3 mx-auto">
                     <h1>Projects</h1>
                 </div>
                 <div class="row py-4">
-                    <div class="col-4">
+                    <div class="col-4 py-2">
+                        <div class="card">
+                            <img src="./images/projects/recipeApp.png" class="card-img-top card-img-height border-bottom" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Recipe Webapp</h5>
+                                <p class="card-text fw-light">
+                                    Created an early development project of an E-commerce website. The main goal of this project is to deploy it to
+                                    my university's community so that students can support other student businesses. 
+                                </p>
+                                <div class="py-2">
+                                    <span class="badge rounded-pill bg-dark">HTML</span>
+                                    <span class="badge rounded-pill bg-dark">CSS</span>
+                                    <span class="badge rounded-pill bg-dark">Javascript</span>
+                                    <span class="badge rounded-pill bg-dark">Python Flask</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 py-2">
                         <div class="card">
                             <img src="./images/projects/cuServiceHome.png" class="card-img-top card-img-height border-bottom" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">CU E-commerce</h5>
-                                <p class="card-text">Contributed to designing an e-commerce platform on Figma based on surveys and user cases
-                                    Implemented Firebase, React, React-Redux, and SCSS to build an early development of the platform
+                                <p class="card-text fw-light">
+                                    Created an early development project of an E-commerce website. The main goal of this project is to deploy it to
+                                    my university's community so that students can support other student businesses. 
                                 </p>
-                                
+                                <div class="py-2">
+                                    <span class="badge rounded-pill bg-dark">React.js</span>
+                                    <span class="badge rounded-pill bg-dark">Redux.js</span>
+                                    <span class="badge rounded-pill bg-dark">SCSS</span>
+                                    <span class="badge rounded-pill bg-dark">Firebase</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 py-2">
                         <div class="card">
-                            <img src="./images/projects/ceramics-bowls-page.png" class="card-img-top card-img-height" alt="...">
+                            <img src="./images/projects/ceramics-bowls-page.png" class="card-img-top card-img-height border-bottom" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Ceramics By MAC</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
+                                <p class="card-text fw-lighter">
+                                    Created a static ceramics portfolio website for my ceramic pieces that I made
+                                    back in high school. The next step is to create a shop so that users can 
+                                    purchase my pieces directly from my website. 
+                                </p>
+                                <div class="py-2">
+                                    <span class="badge rounded-pill bg-dark">React.js</span>
+                                    <span class="badge rounded-pill bg-dark">SCSS</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 py-2">
                         <div class="card">
-                            <img src="./images/projects/EyesOnYou.png" class="card-img-top card-img-height" alt="...">
+                            <img src="./images/projects/EyesOnYou.png" class="card-img-top border-bottom" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Eyes On You</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                
+                                <div class="py-2">
+                                    <span class="badge rounded-pill bg-dark">HTML</span>
+                                    <span class="badge rounded-pill bg-dark">CSS</span>
+                                    <span class="badge rounded-pill bg-dark">Javascript</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -267,32 +310,93 @@
             </div>
                  
         </div>
-        <div id="fun-facts" class="container-fluid justify-content-center py-4">
-            <div id="fun-facts-container" class="w-75 mx-auto">
-                <h3>Fun Facts!</h3>
+        <div id="fun-facts" class="row justify-content-center py-4">
+            <div class="container-fluid">
+                <div class="w-75 mx-auto">
+                    <div class="my-3 text-center mx-auto fun-facts-title py-3">
+                        <h1>Gallery</h1>
+                    </div>
+                </div>
+                <div class="card-group w-75 justify-content-center mx-auto">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./images/gallery/IMG_5968.jpg" class="card-img-top gallery-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./images/gallery/IMG_5668.jpg" class="card-img-top gallery-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./images/gallery/IMG_6348.jpg" class="card-img-top gallery-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./images/gallery/IMG_8700.JPG" class="card-img-top gallery-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./images/gallery/IMG_5682.jpg" class="card-img-top gallery-img" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./images/gallery/IMG_1561.jpg" class="card-img-top gallery-img" alt="...">
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
-        <div id="contact" class="container-fluid justify-content-center py-4">
+        <div id="contact" class="row py-4">
             <div class="w-75 container-fluid">
-                <h1 class="text-center py-4">Contact Me</h1>
-                <form class="row g-3 needs-validation w-50 mx-auto pt-2" action="/form-handler" method="POST">
+                <div class="my-3 py-3 w-75 mx-auto">
+                    <h1 class="text-center mx-auto">Contact Me</h1>
+                </div>
+                <div class="row py-4">
                     <div class="col-6">
-                        <input type="text" id="full-name" class="form-control" name="full-name" value="" placeholder="Full Name" required>
-                        <div class="invalid-feedback">Please enter a full name!</div>
+                        <div id="map-result" class="col-6">
+                        </div>
                     </div>
                     <div class="col-6">
-                        <input type="text" id="email" class="form-control" name="email" value="" placeholder="Email" required>
-                        <div class="valid-feedback">Please enter your email!</div>
+                        <div>
+                        </div>
+                        <h5 class="text-center fw-bold pb-3">Send me a message!</h5>
+                        <form class="row g-3 needs-validation pt-2" action="/form-handler" method="POST">
+                            <div class="col-6">
+                                <input type="text" id="full-name" class="form-control" name="full-name" value="" placeholder="Full Name" required>
+                                <div class="invalid-feedback">Please enter a full name!</div>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" id="email" class="form-control" name="email" value="" placeholder="Email" required>
+                                <div class="valid-feedback">Please enter your email!</div>
+                            </div>
+                            <div class="col-12">
+                                <textarea type="text" id="message" name="text-message" class="form-control message-input" placeholder="Message" required></textarea>
+                                <div class="invalid-feedback">Please enter a non-empty message!</div>
+                            </div>
+                            <div class="col-12">
+                                <button id="submit-message" class="btn btn-primary" type="submit">Send Message</button>
+                            </div>
+                        </form> 
                     </div>
-                    <div class="col-md-12">
-                        <textarea type="text" id="message" name="text-message" class="form-control message-input" placeholder="Message" required></textarea>
-                        <div class="invalid-feedback">Please enter a non-empty message!</div>
-                    </div>
-                    <div class="col-12">
-                        <button id="submit-message" class="btn btn-primary" type="submit">Send Message</button>
-                    </div>
-                </form>
+                </div>
             </div>
+        </div>
+        <div id="map" class="row ">
+            <div id="map-container" class="w-75 container-fluid">
+                <div class="row">
+                    <!--<div id="map-result" class="col-4">
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="row bg-black text-center py-4">
+            <h6 class="text-light my-0">&#169; Mark Calvario 2021</h6>
         </div>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>   
