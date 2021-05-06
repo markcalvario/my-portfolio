@@ -1,4 +1,5 @@
 const submitMessage = document.getElementById("submit-message");
+let googleMapAPIKey="";
 
 async function fetchDataFromServelet () {
     const response = await fetch("/hello");
@@ -13,17 +14,27 @@ async function fetchDataFromServelet () {
         unorderedList.append(factElement);
     })
     funFactsContainer.append(unorderedList);
+}
 
+async function fetchGoogleMapAPI(){
+    const response = await fetch("/google-map");
+    googleMapAPIKey = await response.text();
+}
 
-    //funFactsContainer.innerHTML = text;
-    //fetchContainer.classList.add("text-center");
+function createMap() {
+    const columbiaUniversity = {lat: 40.807537, lng: -73.962570}
+    const map = new google.maps.Map(
+        document.getElementById('map-result'),
+        {center: columbiaUniversity,
+            zoom: 14,
+            controlSize: 25
+        });
+    const marker = new google.maps.Marker({
+        position: columbiaUniversity,
+        map: map,
+    });
+
 }
 fetchDataFromServelet();
-
-/*async function fetchMessageResponse (e){
-    e.preventDefault();
-    const response = await fetch("/form-handler");
-    const text = await response.json();
-    console.log(text);
-}
-submitMessage.addEventListener("click", fetchMessageResponse);*/
+fetchGoogleMapAPI();
+createMap();
